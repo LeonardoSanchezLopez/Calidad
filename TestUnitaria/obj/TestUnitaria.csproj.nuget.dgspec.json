@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\DIARS\\TestUnitaria\\TestUnitaria.csproj": {}
+    "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\TestUnitaria\\TestUnitaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\DIARS.csproj": {
+    "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\DIARS\\DIARS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\DIARS.csproj",
+        "projectUniqueName": "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\DIARS\\DIARS.csproj",
         "projectName": "DIARS",
-        "projectPath": "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\DIARS.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\obj\\",
+        "projectPath": "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\DIARS\\DIARS.csproj",
+        "packagesPath": "C:\\Users\\MAMAYOVA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\DIARS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAMAYOVA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +28,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -45,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -127,24 +130,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\DIARS\\TestUnitaria\\TestUnitaria.csproj": {
+    "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\TestUnitaria\\TestUnitaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\DIARS\\TestUnitaria\\TestUnitaria.csproj",
+        "projectUniqueName": "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\TestUnitaria\\TestUnitaria.csproj",
         "projectName": "TestUnitaria",
-        "projectPath": "C:\\Users\\User\\source\\repos\\DIARS\\TestUnitaria\\TestUnitaria.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\DIARS\\TestUnitaria\\obj\\",
+        "projectPath": "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\TestUnitaria\\TestUnitaria.csproj",
+        "packagesPath": "C:\\Users\\MAMAYOVA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\TestUnitaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAMAYOVA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -153,6 +158,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -160,8 +166,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\DIARS.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\DIARS.csproj"
+              "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\DIARS\\DIARS.csproj": {
+                "projectPath": "C:\\Users\\MAMAYOVA\\Desktop\\Calidadypruebasdesoft\\DIARS\\DIARS.csproj"
               }
             }
           }
@@ -176,7 +182,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -231,7 +237,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
