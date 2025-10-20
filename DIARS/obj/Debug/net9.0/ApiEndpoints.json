@@ -1,0 +1,1490 @@
+[
+  {
+    "ContainingType": "DIARS.Controllers.BusController",
+    "Method": "ListarPersonas",
+    "RelativePath": "api/Bus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.BusController",
+    "Method": "CrearPersona",
+    "RelativePath": "api/Bus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Bus.BusAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.BusController",
+    "Method": "ActualizarBus",
+    "RelativePath": "api/Bus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Bus.BusActuDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.BusController",
+    "Method": "GetBusById",
+    "RelativePath": "api/Bus/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DIARS.Controllers.Dto.Bus.BusListaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DIARS.Controllers.BusController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/Bus/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.CategoriaController",
+    "Method": "ListarCategoria",
+    "RelativePath": "api/Categoria",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.CategoriaController",
+    "Method": "CrearCategoria",
+    "RelativePath": "api/Categoria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Categoria.CatAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.CategoriaController",
+    "Method": "ActualizarCategoria",
+    "RelativePath": "api/Categoria",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Categoria.CatActuDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.CategoriaController",
+    "Method": "GetBusById",
+    "RelativePath": "api/Categoria/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DIARS.Controllers.Dto.Categoria.CatListaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DIARS.Controllers.CategoriaController",
+    "Method": "EliminarCategoria",
+    "RelativePath": "api/Categoria/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ContratoMantenimientoController",
+    "Method": "ListarContratoMantenimiento",
+    "RelativePath": "api/ContratoMantenimiento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ContratoMantenimientoController",
+    "Method": "CrearContratoMantenimiento",
+    "RelativePath": "api/ContratoMantenimiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.ContratoMantenimiento.CMAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ContratoMantenimientoController",
+    "Method": "GetContratoMantenimientoById",
+    "RelativePath": "api/ContratoMantenimiento/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DIARS.Controllers.Dto.ContratoMantenimiento.CMListaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ContratoMantenimientoController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/ContratoMantenimiento/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleEIController",
+    "Method": "ListarDetalleEvaluacionInterna",
+    "RelativePath": "api/DetalleEI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleEIController",
+    "Method": "CrearDetalleEvaluacionInterna",
+    "RelativePath": "api/DetalleEI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "detalleDto",
+        "Type": "DIARS.Controllers.Dto.DetalleEI.DEIAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleEIController",
+    "Method": "GetDetalleEvaluacionInternaById",
+    "RelativePath": "api/DetalleEI/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleNotaIngresoController",
+    "Method": "ListarDetalleNotaIngreso",
+    "RelativePath": "api/DetalleNotaIngreso",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleNotaIngresoController",
+    "Method": "CrearDetalleNotaIngreso",
+    "RelativePath": "api/DetalleNotaIngreso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.DetalleNotaIngreso.DNoInAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleNotaIngresoController",
+    "Method": "ObtenerDetalleNotaIngreso",
+    "RelativePath": "api/DetalleNotaIngreso/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleNotaSalidaController",
+    "Method": "ListarDetalleNotaSalida",
+    "RelativePath": "api/DetalleNotaSalida",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleNotaSalidaController",
+    "Method": "CrearDetalleNotaSalida",
+    "RelativePath": "api/DetalleNotaSalida",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.DetalleNotaSalida.DNoSaAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleNotaSalidaController",
+    "Method": "ObtenerDetalleNotaSalida",
+    "RelativePath": "api/DetalleNotaSalida/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOrdenCompraController",
+    "Method": "ListarDetalleOrdenCompra",
+    "RelativePath": "api/DetalleOrdenCompra",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOrdenCompraController",
+    "Method": "CrearDetalleOrdenCompra",
+    "RelativePath": "api/DetalleOrdenCompra",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.DetalleOrdenCompra.DOrCoAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOrdenCompraController",
+    "Method": "ObtenerDetalleOrdenCompra",
+    "RelativePath": "api/DetalleOrdenCompra/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOrdenPedidoController",
+    "Method": "ListarDetalleOrdenPedido",
+    "RelativePath": "api/DetalleOrdenPedido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOrdenPedidoController",
+    "Method": "CrearDetalleOrdenPedido",
+    "RelativePath": "api/DetalleOrdenPedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.DetalleOrdenPedido.DOrPeAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOrdenPedidoController",
+    "Method": "ObtenerDetalleOrdenPedido",
+    "RelativePath": "api/DetalleOrdenPedido/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOTEController",
+    "Method": "ListarDetalleOTE",
+    "RelativePath": "api/DetalleOTE",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOTEController",
+    "Method": "CrearDetalleOTE",
+    "RelativePath": "api/DetalleOTE",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.DetalleOTE.DOTEAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOTEController",
+    "Method": "ObtenerDetalleOTE",
+    "RelativePath": "api/DetalleOTE/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOTIController",
+    "Method": "ListarDetalleOTI",
+    "RelativePath": "api/DetalleOTI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOTIController",
+    "Method": "CrearDetalleOTI",
+    "RelativePath": "api/DetalleOTI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.DetalleOTI.DOTIAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.DetalleOTIController",
+    "Method": "ObtenerDetalleOTI",
+    "RelativePath": "api/DetalleOTI/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EspecialidadController",
+    "Method": "ListarEspecialidad",
+    "RelativePath": "api/Especialidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EspecialidadController",
+    "Method": "CrearEspecialidad",
+    "RelativePath": "api/Especialidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Especialidad.EspeAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EspecialidadController",
+    "Method": "ActualizarEspecialidad",
+    "RelativePath": "api/Especialidad",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Especialidad.EspeActuDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EspecialidadController",
+    "Method": "GetEspecialidadById",
+    "RelativePath": "api/Especialidad/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DIARS.Controllers.Dto.Especialidad.EspeListaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EspecialidadController",
+    "Method": "EliminarEspecialidad",
+    "RelativePath": "api/Especialidad/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EvaluacionExternaController",
+    "Method": "ListarEvaluacionExterna",
+    "RelativePath": "api/EvaluacionExterna",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EvaluacionExternaController",
+    "Method": "CrearEvaluacionExterna",
+    "RelativePath": "api/EvaluacionExterna",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.EvaluacionExterna.EvaExAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EvaluacionExternaController",
+    "Method": "ObtenerEvaluacionExterna",
+    "RelativePath": "api/EvaluacionExterna/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EvaluacionExternaController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/EvaluacionExterna/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EvaluacionInternaController",
+    "Method": "ListarEvaluacionInterna",
+    "RelativePath": "api/EvaluacionInterna",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EvaluacionInternaController",
+    "Method": "CrearEvaluacionInterna",
+    "RelativePath": "api/EvaluacionInterna",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.EvaluacionInterna.EvaInAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EvaluacionInternaController",
+    "Method": "ObtenerEvaluacionInterna",
+    "RelativePath": "api/EvaluacionInterna/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.EvaluacionInternaController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/EvaluacionInterna/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.FacturaController",
+    "Method": "ListarFactura",
+    "RelativePath": "api/Factura",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.FacturaController",
+    "Method": "CrearFactura",
+    "RelativePath": "api/Factura",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.Factura.FacAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.FacturaController",
+    "Method": "ObtenerFactura",
+    "RelativePath": "api/Factura/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MarcaController",
+    "Method": "ListarMarca",
+    "RelativePath": "api/Marca",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MarcaController",
+    "Method": "CrearMarca",
+    "RelativePath": "api/Marca",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.MarcaRepuesto.MarcaAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MarcaController",
+    "Method": "ActualizarMarca",
+    "RelativePath": "api/Marca",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.MarcaRepuesto.MarcaActuDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MarcaController",
+    "Method": "GetBusById",
+    "RelativePath": "api/Marca/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DIARS.Controllers.Dto.MarcaRepuesto.MarcaListaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MarcaController",
+    "Method": "EliminarMarca",
+    "RelativePath": "api/Marca/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MecanicoController",
+    "Method": "ListarMecanico",
+    "RelativePath": "api/Mecanico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MecanicoController",
+    "Method": "CrearMecanico",
+    "RelativePath": "api/Mecanico",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Mecanico.MecaAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MecanicoController",
+    "Method": "ActualizarMecanico",
+    "RelativePath": "api/Mecanico",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Mecanico.MecaActuDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MecanicoController",
+    "Method": "GetMecanicoById",
+    "RelativePath": "api/Mecanico/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DIARS.Controllers.Dto.Mecanico.MecaListaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DIARS.Controllers.MecanicoController",
+    "Method": "EliminarMecanico",
+    "RelativePath": "api/Mecanico/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.NotaIngresoRepuestoController",
+    "Method": "ListarNotaIngresoRepuesto",
+    "RelativePath": "api/NotaIngresoRepuesto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.NotaIngresoRepuestoController",
+    "Method": "CrearNotaIngresoRepuesto",
+    "RelativePath": "api/NotaIngresoRepuesto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.NotaIngresoRepuestos.NIRAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.NotaIngresoRepuestoController",
+    "Method": "ObtenerNotaIngresoRepuesto",
+    "RelativePath": "api/NotaIngresoRepuesto/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.NotaIngresoRepuestoController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/NotaIngresoRepuesto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.NotaSalidaRepuestoController",
+    "Method": "ListarNotaSalidaRepuesto",
+    "RelativePath": "api/NotaSalidaRepuesto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.NotaSalidaRepuestoController",
+    "Method": "CrearNotaSalidaRepuesto",
+    "RelativePath": "api/NotaSalidaRepuesto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.NotaSalidaRepuestos.NSRAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.NotaSalidaRepuestoController",
+    "Method": "ObtenerNotaSalidaRepuesto",
+    "RelativePath": "api/NotaSalidaRepuesto/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.NotaSalidaRepuestoController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/NotaSalidaRepuesto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenCompraController",
+    "Method": "ListarOrdenCompra",
+    "RelativePath": "api/OrdenCompra",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenCompraController",
+    "Method": "CrearOrdenCompra",
+    "RelativePath": "api/OrdenCompra",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.OrdenCompra.OrCoAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenCompraController",
+    "Method": "ObtenerOrdenCompra",
+    "RelativePath": "api/OrdenCompra/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenCompraController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/OrdenCompra/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenPedidoController",
+    "Method": "ListarOrdenPedido",
+    "RelativePath": "api/OrdenPedido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenPedidoController",
+    "Method": "CrearOrdenPedido",
+    "RelativePath": "api/OrdenPedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.OrdenPedido.OrPeAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenPedidoController",
+    "Method": "ObtenerOrdenPedido",
+    "RelativePath": "api/OrdenPedido/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenPedidoController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/OrdenPedido/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenTrabajoExternoController",
+    "Method": "ListarOrdenTrabajoExterno",
+    "RelativePath": "api/OrdenTrabajoExterno",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenTrabajoExternoController",
+    "Method": "CrearOrdenTrabajoExterno",
+    "RelativePath": "api/OrdenTrabajoExterno",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.OrdenTrabajoExterno.OTEAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenTrabajoExternoController",
+    "Method": "ObtenerOrdenTrabajoExterno",
+    "RelativePath": "api/OrdenTrabajoExterno/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenTrabajoExternoController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/OrdenTrabajoExterno/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenTrabajoInternoController",
+    "Method": "ListarOrdenTrabajoInterno",
+    "RelativePath": "api/OrdenTrabajoInterno",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenTrabajoInternoController",
+    "Method": "CrearOrdenTrabajoInterno",
+    "RelativePath": "api/OrdenTrabajoInterno",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DIARS.Controllers.Dto.OrdenTrabajoInterno.OTIAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenTrabajoInternoController",
+    "Method": "ObtenerOrdenTrabajoInterno",
+    "RelativePath": "api/OrdenTrabajoInterno/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.OrdenTrabajoInternoController",
+    "Method": "EliminarPersona",
+    "RelativePath": "api/OrdenTrabajoInterno/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ProveedorController",
+    "Method": "ListarProveedor",
+    "RelativePath": "api/Proveedor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ProveedorController",
+    "Method": "CrearProveedor",
+    "RelativePath": "api/Proveedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Proveedor.ProAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ProveedorController",
+    "Method": "ActualizarProveedor",
+    "RelativePath": "api/Proveedor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Proveedor.ProActuDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ProveedorController",
+    "Method": "GetProveedorById",
+    "RelativePath": "api/Proveedor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DIARS.Controllers.Dto.Proveedor.ProListaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DIARS.Controllers.ProveedorController",
+    "Method": "EliminarProveedor",
+    "RelativePath": "api/Proveedor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.RefreshTokenController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DIARS.Controllers.TokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.RepuestoController",
+    "Method": "ListarRepuesto",
+    "RelativePath": "api/Repuesto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.RepuestoController",
+    "Method": "CrearMarca",
+    "RelativePath": "api/Repuesto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Repuesto.RepuAgregaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.RepuestoController",
+    "Method": "ActualizarRepuesto",
+    "RelativePath": "api/Repuesto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personaDto",
+        "Type": "DIARS.Controllers.Dto.Repuesto.RepuActuDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.RepuestoController",
+    "Method": "GetRepuestoById",
+    "RelativePath": "api/Repuesto/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DIARS.Controllers.Dto.Repuesto.RepuListaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DIARS.Controllers.RepuestoController",
+    "Method": "EliminarRepuesto",
+    "RelativePath": "api/Repuesto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DIARS.Controllers.UsuarioController",
+    "Method": "InicioSesion",
+    "RelativePath": "usuario/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "DIARS.Models.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
