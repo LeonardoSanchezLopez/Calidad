@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestUnitaria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3572277cb8d05e5c809e9f987306620c258fd4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8917db636ad7d7f1a5f461f9ec68e89fba957d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestUnitaria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestUnitaria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
