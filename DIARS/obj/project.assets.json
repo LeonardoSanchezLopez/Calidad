@@ -4102,23 +4102,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cristofer Lizarra\\.nuget\\packages\\": {},
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Reposotorio de Github oficial\\DIARS\\DIARS.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Documents\\calidad_ro\\DIARS\\DIARS.csproj",
       "projectName": "DIARS",
-      "projectPath": "D:\\Reposotorio de Github oficial\\DIARS\\DIARS.csproj",
-      "packagesPath": "C:\\Users\\Cristofer Lizarra\\.nuget\\packages\\",
-      "outputPath": "D:\\Reposotorio de Github oficial\\DIARS\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Documents\\calidad_ro\\DIARS\\DIARS.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Documents\\calidad_ro\\DIARS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Cristofer Lizarra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4145,7 +4145,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -4227,7 +4227,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
