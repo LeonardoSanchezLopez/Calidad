@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GfUvFLQjfBUjeq0uU55dJ4dF2LMX+4PPQo5woG52oRc=",
+  "Hash": "0a6z5jeGZw4RVyF2EtDIyt9ewNE90EFVOF+d58+gOKk=",
   "Source": "DIARS",
   "BasePath": "_content/DIARS",
   "Mode": "Default",
@@ -30,10 +30,10 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\9.0.2\\staticwebassets\\AuthenticationService.js"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
+      "Identity": "C:\\Users\\User\\Documents\\Calidad\\DIARS\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
       "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\Calidad\\DIARS\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
       "RelativePath": "AuthenticationService.js.gz",
       "AssetKind": "All",
@@ -91,7 +91,7 @@
     },
     {
       "Route": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\Calidad\\DIARS\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -146,7 +146,7 @@
     },
     {
       "Route": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js.gz",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\DIARS\\DIARS\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
+      "AssetFile": "C:\\Users\\User\\Documents\\Calidad\\DIARS\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
