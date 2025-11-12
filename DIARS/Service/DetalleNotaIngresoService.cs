@@ -1,36 +1,35 @@
 ﻿using Dapper;
-using DIARS.Controllers.Dto.DetalleEI;
 using DIARS.Controllers.Dto;
-using DIARS.Models;
-using Org.BouncyCastle.Crypto;
-using FluentValidation;
 using DIARS.Controllers.Dto.DetalleNotaIngreso;
 using DIARS.Controllers.Mapping;
+using DIARS.Models;
+using DIARS.Service.Database;
+using FluentValidation;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 namespace DIARS.Service
 {
     public class DetalleNotaIngresoService
     {
-        private readonly MySQLDatabase _db;
+        private readonly DetalleNotaSalidaMySqlWrapper _db; // 🔹 Usamos la interfaz, no la clase concreta
         private readonly IValidator<DNoInAgregaDto> _validator;
 
-        public DetalleNotaIngresoService(MySQLDatabase db, IValidator<DNoInAgregaDto> validator)
+        public DetalleNotaIngresoService(DetalleNotaSalidaMySqlWrapper db, IValidator<DNoInAgregaDto> validator)
         {
             _db = db;
             _validator = validator;
         }
 
+        // 🧾 Listar Detalles
         public List<DNoInListaDto> ListarDetalleNotaIngreso()
         {
-            List<DetalleNotaIngreso> lista = new();
+            var lista = new List<DetalleNotaIngreso>();
+            var mapper = new DetalleNotaIngresoMapper();
 
-            using var connection = _db.GetConnection();
-            connection.Open();
-
-            using var command = new MySqlCommand("CALL SP_DetalleNotaIngreso_Lista()", connection);
-            using var reader = command.ExecuteReader();
+            using var reader = _db.ExecuteReader("SP_DetalleNotaIngreso_Lista", null);
 
             while (reader.Read())
             {
@@ -51,57 +50,52 @@ namespace DIARS.Service
                 });
             }
 
-            var mapper = new DetalleNotaIngresoMapper();
-            return lista.Select(e => mapper.EntityToDto_DNoInLista(e)).ToList();
+            reader.Close();
+            return lista.Select(mapper.EntityToDto_DNoInLista).ToList();
         }
 
+        // 🧩 Insertar Detalle
         public ResponseDto<bool> InsertarDetalleNotaIngreso(DNoInAgregaDto dto)
         {
             var response = new ResponseDto<bool>();
 
-            var validationResult = _validator.Validate(dto);
-            if (!validationResult.IsValid)
-            {
-                response.EjecucionExitosa = false;
-                response.MensajeError = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
-                response.Data = false;
-                return response;
-            }
-
-            var mapper = new DetalleNotaIngresoMapper();
-            var entity = mapper.DtoToEntity_DNoInAgregar(dto);
-
             try
             {
-                using var connection = _db.GetConnection();
-                connection.Open();
-
-                using var command = new MySqlCommand("SP_DetalleNotaIngreso_Crea", connection)
+                // 🧩 Validación
+                var validationResult = _validator.Validate(dto);
+                if (!validationResult.IsValid)
                 {
-                    CommandType = CommandType.StoredProcedure
-                };
+                    response.EjecucionExitosa = false;
+                    response.MensajeError = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
+                    response.Data = false;
+                    return response;
+                }
 
-                command.Parameters.AddWithValue("p_IRCodigo", entity.IRCodigo.CodigoIR);
-                command.Parameters.AddWithValue("p_CantidadRecibida", entity.CantidadRecibida);
-                command.Parameters.AddWithValue("p_NombreRepu", entity.CodigoRepu.NombreR);
-                command.Parameters.AddWithValue("p_CantidadAceptada", entity.CantidadAceptada);
-                command.Parameters.AddWithValue("p_Precio", entity.Precio);
+                var mapper = new DetalleNotaIngresoMapper();
+                var entity = mapper.DtoToEntity_DNoInAgregar(dto);
 
-                var mensajeParam = new MySqlParameter("p_Mensaje", MySqlDbType.VarChar, 255)
-                {
-                    Direction = ParameterDirection.Output
-                };
-                command.Parameters.Add(mensajeParam);
+                // ⚙️ Parámetros
+                var parameters = new Dictionary<string, object>
+        {
+            { "p_IRCodigo", entity.IRCodigo.CodigoIR },
+            { "p_CantidadRecibida", entity.CantidadRecibida },
+            { "p_NombreRepu", entity.CodigoRepu.NombreR },
+            { "p_CantidadAceptada", entity.CantidadAceptada },
+            { "p_Precio", entity.Precio }
+        };
 
-                command.ExecuteNonQuery();
+                // 🧠 Ejecución BD
+                var result = _db.ExecuteNonQuery("SP_DetalleNotaIngreso_Crea", parameters);
 
-                string mensaje = mensajeParam.Value?.ToString();
-                response.MensajeError = mensaje;
-                response.EjecucionExitosa = mensaje != null && mensaje.Contains("exitosa");
+                response.EjecucionExitosa = result > 0;
                 response.Data = response.EjecucionExitosa;
+                response.MensajeError = response.EjecucionExitosa
+                    ? "Inserción exitosa"
+                    : "No se pudo insertar el detalle de la nota de ingreso.";
             }
-            catch (MySqlException ex)
+            catch (Exception ex)
             {
+                // ✅ Captura *cualquier* excepción
                 response.EjecucionExitosa = false;
                 response.MensajeError = $"Error en BD: {ex.Message}";
                 response.Data = false;
@@ -110,20 +104,19 @@ namespace DIARS.Service
             return response;
         }
 
+
+        // 🔍 Obtener Detalle por ID
         public DNoInListaDto ObtenerDetalleNotaIngreso(int id)
         {
+            var parameters = new Dictionary<string, object>
+            {
+                { "p_DetalleNotaIngresoID", id }
+            };
+
+            using var reader = _db.ExecuteReader("SP_DetalleNotaIngreso_ObtenPorId", parameters);
+
             DetalleNotaIngreso entity = null;
 
-            using var connection = _db.GetConnection();
-            connection.Open();
-
-            using var command = new MySqlCommand("SP_DetalleNotaIngreso_ObtenPorId", connection)
-            {
-                CommandType = CommandType.StoredProcedure
-            };
-            command.Parameters.AddWithValue("p_DetalleNotaIngresoID", id);
-
-            using var reader = command.ExecuteReader();
             if (reader.Read())
             {
                 entity = new DetalleNotaIngreso
@@ -143,6 +136,7 @@ namespace DIARS.Service
                 };
             }
 
+            reader.Close();
             return entity == null ? null : new DetalleNotaIngresoMapper().EntityToDto_DNoInLista(entity);
         }
     }

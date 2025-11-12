@@ -474,12 +474,24 @@
           "Microsoft.AspNetCore.Metadata": "9.0.2",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.10",
           "Microsoft.Extensions.Options": "9.0.10"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
         }
       },
       "Microsoft.AspNetCore.Components/9.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Authorization": "9.0.2",
           "Microsoft.AspNetCore.Components.Analyzers": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Analyzers/9.0.2": {},
@@ -487,11 +499,23 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authorization": "9.0.2",
           "Microsoft.AspNetCore.Components": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/9.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.Forms.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Web/9.0.2": {
@@ -501,6 +525,12 @@
           "Microsoft.Extensions.DependencyInjection": "9.0.10",
           "Microsoft.Extensions.Primitives": "9.0.10",
           "Microsoft.JSInterop": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.Web.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.WebAssembly/9.0.2": {
@@ -536,7 +566,14 @@
           "lib/net9.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/9.0.2": {},
+      "Microsoft.AspNetCore.Metadata/9.0.2": {
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Metadata.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Testing/9.0.10": {
         "dependencies": {
           "Microsoft.AspNetCore.TestHost": "9.0.10",
@@ -1128,7 +1165,14 @@
           "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
-      "Microsoft.JSInterop/9.0.2": {},
+      "Microsoft.JSInterop/9.0.2": {
+        "runtime": {
+          "lib/net9.0/Microsoft.JSInterop.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
       "Microsoft.JSInterop.WebAssembly/9.0.2": {
         "dependencies": {
           "Microsoft.JSInterop": "9.0.2"
